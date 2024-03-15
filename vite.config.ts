@@ -5,6 +5,7 @@ import { copyFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 export default defineConfig({
+    base: '/remix-spa-example/',
     plugins: [
         remix({
             ssr: false,
