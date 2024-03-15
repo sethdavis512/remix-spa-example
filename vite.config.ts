@@ -4,12 +4,14 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import { copyFileSync } from 'node:fs';
 import { join } from 'node:path';
 
+const base = '/remix-spa-example/';
+
 export default defineConfig({
-    base: '/remix-spa-example/',
+    base,
     plugins: [
         remix({
             ssr: false,
-            basename: '/remix-spa-example/',
+            basename: base,
             buildEnd(args) {
                 if (!args.viteConfig.isProduction) return;
 
