@@ -15,11 +15,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
-                <link
-                    rel="icon"
-                    type="image/png"
-                    href="../public/favicon.ico"
-                />
+                <link rel="icon" type="image/svg+xml" href="favicon.svg" />
                 <Meta />
                 <Links />
             </head>
